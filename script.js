@@ -5,7 +5,7 @@ let realData = "";
 const getNewQuotes = () => {
     const rNum = Math.floor(Math.random() * realData.length);
     quote.innerText = realData[rNum].text;
-    author.innerText = realData[rNum].author;
+    author.innerText = realData[rNum].author ? realData[rNum].author : "UnKnown";
 }
 
 const getQuotes = async() => {
