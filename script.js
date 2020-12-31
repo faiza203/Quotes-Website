@@ -2,6 +2,12 @@ const quote = document.getElementById("quote");
 const author = document.getElementById("author");
 let realData = "";
 
+
+const tweetNow = () => {
+    let tweetPost = "https://twitter.com/intent/tweet";
+    window.open(tweetPost)
+}
+
 const getNewQuotes = () => {
     const rNum = Math.floor(Math.random() * realData.length);
     quote.innerText = realData[rNum].text;
