@@ -1,17 +1,18 @@
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
 let realData = "";
-
+let quoteData = "";
 
 const tweetNow = () => {
-    let tweetPost = "https://twitter.com/intent/tweet";
+    let tweetPost = `https://twitter.com/intent/tweet?text=${quoteData.text}`;
     window.open(tweetPost)
 }
 
 const getNewQuotes = () => {
     const rNum = Math.floor(Math.random() * realData.length);
-    quote.innerText = realData[rNum].text;
-    author.innerText = realData[rNum].author ? realData[rNum].author : "UnKnown";
+    quoteData = realData[rNum];
+    quote.innerText = quoteData.text;
+    author.innerText = quoteData.author ? quoteData.author : "UnKnown";
 }
 
 const getQuotes = async() => {
