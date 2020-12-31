@@ -19,7 +19,7 @@ body {
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 0.2rem 3rem darkgray;
-    padding: 0 2em 2em 2em;
+    padding: 0 2em 1em 2em;
 }
 
 #quotes div {
@@ -35,25 +35,26 @@ body {
 }
 
 #quote {
-    margin-top: 1em;
     color: cadetblue;
     font-style: italic;
     line-height: 1.5em;
     font-size: 1em;
-    margin-left: 1em;
+    margin: 1em 3px 1em 0;
 }
 
 #author {
     color: gray;
     text-align: right;
     font-size: 1.5em;
-    margin: 0 5px 0 0;
+    margin: 5px 0 0 0;
 }
 
 #newQuote {
+    border: 2px solid black;
+    color: #ffffff;
+    background-color: blue;
     width: 50%;
     height: 3em;
-    border: none;
     border-radius: 10px;
     margin: 10px 0 0 6em;
 }
