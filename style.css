@@ -10,7 +10,7 @@ body {
 
 #card {
     background-color: #4b9cfe;
-    padding: 2em 3em 1em 3em;
+    padding: 2em 3em 5px 3em;
     border-radius: 5px;
     width: 20em;
 }
