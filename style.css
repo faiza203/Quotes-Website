@@ -50,11 +50,13 @@ body {
 }
 
 #newQuote {
-    border: 2px solid black;
     color: #ffffff;
-    background-color: blue;
-    width: 50%;
-    height: 3em;
-    border-radius: 10px;
-    margin: 10px 0 0 6em;
+    background-color: #599ef1;
+    width: 30%;
+    height: 2.5em;
+    text-align: right;
+    border: none;
+    border-radius: 1px;
+    margin: 10px 0 0 272px;
+    text-decoration: underline;
 }
