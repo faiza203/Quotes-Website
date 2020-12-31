@@ -12,7 +12,8 @@ const getNewQuotes = () => {
     const rNum = Math.floor(Math.random() * realData.length);
     quoteData = realData[rNum];
     quote.innerText = quoteData.text;
-    author.innerText = quoteData.author ? quoteData.author : "UnKnown";
+    author.innerText = quoteData.author ? "&" +
+        quoteData.author : "UnKnown";
 }
 
 const getQuotes = async() => {
