@@ -1,62 +1,62 @@
 body {
-    background-color: #212e3e;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 10em 0;
-    margin: 0;
+  background-color: #212e3e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 10em 0;
+  margin: 0;
 }
 
 #card {
-    background-color: #4b9cfe;
-    padding: 2em 3em 5px 3em;
-    border-radius: 5px;
-    width: 20em;
+  background-color: #4b9cfe;
+  padding: 2em 3em 5px 3em;
+  border-radius: 5px;
+  width: 20em;
 }
 
 #quotes {
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 0.2rem 3rem darkgray;
-    padding: 0 2em 1em 2em;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0.2rem 3rem darkgray;
+  padding: 0 2em 1em 2em;
 }
 
 #quotes div {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #quotes div img {
-    margin: 0;
-    padding: 0;
-    height: 2em;
-    margin-right: -2.5em;
+  margin: 0;
+  padding: 0;
+  height: 2em;
+  margin-right: -2.5em;
 }
 
 #quote {
-    color: cadetblue;
-    font-style: italic;
-    line-height: 1.5em;
-    font-size: 1em;
-    margin: 1em 3px 1em 0;
+  color: cadetblue;
+  font-style: italic;
+  line-height: 1.5em;
+  font-size: 1em;
+  margin: 1em 3px 1em 0;
 }
 
 #author {
-    color: gray;
-    text-align: right;
-    font-size: 1.5em;
-    margin: 5px 0 0 0;
+  color: gray;
+  text-align: right;
+  font-size: 1.5em;
+  margin: 5px 0 0 0;
 }
 
 #newQuote {
-    color: #ffffff;
-    background-color: #599ef1;
-    width: 30%;
-    height: 2.5em;
-    text-align: right;
-    border: none;
-    border-radius: 1px;
-    margin: 10px 0 0 272px;
-    text-decoration: underline;
+  color: #ffffff;
+  background-color: #599ef1;
+  width: 30%;
+  height: 2.5em;
+  text-align: right;
+  border: none;
+  border-radius: 1px;
+  margin: 10px 0 0 272px;
+  text-decoration: underline;
 }
