@@ -1,5 +1,7 @@
-const quote = document.getElementById("quote");
+const quote = document.getElementById("text");
 const author = document.getElementById("author");
+const newQuoteBtn = document.getElementById("new-quote");
+
 let realData = "";
 let quoteData = "";
 
@@ -25,5 +27,7 @@ const getQuotes = async () => {
     console.log(err.message);
   }
 };
+
+newQuoteBtn.addEventListener("click", getNewQuotes);
 
 getQuotes();

@@ -5,26 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="//abs.twimg.com/favicons/twitter.ico" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Quotes</title>
   </head>
 
   <body>
-    <div id="card">
-      <div id="quotes">
-        <div>
-          <p id="quote">You can do every thing with the help of Allah</p>
-          <img
-            src="https://abs.twimg.com/favicons/twitter.ico"
-            alt="Tweet "
-            onclick="tweetNow() "
-          />
+    <div id="wrapper">
+      <div id="quote-box">
+        <div class="quote-text" style="opacity: 1">
+          <i class="fa fa-quote-left"> </i
+          ><span id="text">Either you run the day, or the day runs you.</span>
         </div>
-        <p id="author">&Faiza Fiaz</p>
+        <div class="quote-author" style="opacity: 1">
+          - <span id="author">Jim Rohn</span>
+        </div>
+        <div class="buttons">
+          <a
+            class="button"
+            id="tweet-quote"
+            title="Tweet this quote!"
+            target="_top"
+            href="https://twitter.com/intent/tweet?hashtags=quotes&amp;related=freecodecamp&amp;text=%22Either%20you%20run%20the%20day%2C%20or%20the%20day%20runs%20you.%22%20Jim%20Rohn"
+            style="background-color: rgb(189, 187, 153)"
+          >
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a
+            class="button"
+            id="tumblr-quote"
+            title="Post this quote on tumblr!"
+            target="_blank"
+            href="https://www.tumblr.com/widgets/share/tool?posttype=quote&amp;tags=quotes,freecodecamp&amp;caption=Jim%20Rohn&amp;content=Either%20you%20run%20the%20day%2C%20or%20the%20day%20runs%20you.&amp;canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&amp;shareSource=tumblr_share_button"
+            style="background-color: rgb(189, 187, 153)"
+          >
+            <i class="fa fa-tumblr"></i>
+          </a>
+          <button
+            class="button"
+            id="new-quote"
+            style="background-color: rgb(189, 187, 153)"
+          >
+            New quote
+          </button>
+        </div>
       </div>
-      <div class="button">
-        <button onclick="getNewQuotes()" id="newQuote">Next -></button>
-      </div>
+      <div class="footer">by <a href="https://codepen.io/hezag/">hezag</a></div>
     </div>
-    <script src="script.js "></script>
   </body>
+  <script src="script.js "></script>
 </html>
