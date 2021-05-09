@@ -1,6 +1,11 @@
+const body = document.querySelector("body");
 const quote = document.getElementById("text");
 const author = document.getElementById("author");
+const quoteAuthor = document.querySelector(".quote-author");
 const newQuoteBtn = document.getElementById("new-quote");
+const icons = document.querySelector(".fa");
+const tweet = document.querySelector(".fa-twitter");
+const tamblur = document.querySelector(".fa-tumblr");
 
 let realData = "";
 let quoteData = "";
@@ -13,8 +18,9 @@ const tweetNow = () => {
 const getNewQuotes = () => {
   const rNum = Math.floor(Math.random() * realData.length);
   quoteData = realData[rNum];
-  quote.innerText = quoteData.text;
+  quote.innerHTML = `          <i class="fa fa-quote-left"> </i>${quoteData.text}`;
   author.innerText = quoteData.author ? "&" + quoteData.author : "UnKnown";
+  changeColor();
 };
 
 const getQuotes = async () => {
@@ -31,3 +37,17 @@ const getQuotes = async () => {
 newQuoteBtn.addEventListener("click", getNewQuotes);
 
 getQuotes();
+
+const changeColor = () => {
+  const getRanColor = () => Math.floor(Math.random() * 255);
+  const color = `rgb(${getRanColor()} , ${getRanColor()} , ${getRanColor()})`;
+  body.style.backgroundColor = color;
+  quote.style.color = color;
+  quoteAuthor.style.color = color;
+  newQuoteBtn.style.backgroundColor = color;
+  icons.style.color = color;
+  tweet.style.backgroundColor = color;
+  tamblur.style.backgroundColor = color;
+};
+
+changeColor();
