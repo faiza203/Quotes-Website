@@ -63,6 +63,7 @@ body {
   font-weight: 600;
   height: 35px;
   margin: 0.5em;
+  padding: 0 1em;
 }
 
 .changeOpacity {
