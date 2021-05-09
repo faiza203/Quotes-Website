@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500");
+
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 #quote-box {
@@ -18,7 +20,7 @@ body {
 
 .quote-text {
   font-size: 1.75em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .quote-text .fa {
@@ -27,13 +29,29 @@ body {
 
 .quote-author {
   font-weight: 200;
-  font-size: 1.2em;
+  font-size: 1em;
   padding-top: 20px;
   text-align: right;
 }
 
 .buttons {
-  padding-top: 2em;
+  padding: 2em 0;
+}
+
+.buttons a {
+  float: left;
+  height: 35px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 5%;
+  margin: 0 5px;
+}
+.buttons a i {
+  font-size: 1.2em;
+  color: #fff;
 }
 
 #new-quote {
@@ -41,18 +59,31 @@ body {
   border: none;
   color: #fff;
   border-radius: 3px;
+  font-weight: 600;
   padding: 1em 1.5em;
+}
+
+.changeOpacity {
+  animation: changeOpacity 4s;
 }
 
 .footer {
   width: 450px;
   margin: 15px auto 30px auto;
-  /* font-size: 0.8em; */
   color: #fff;
+  font-weight: 500;
 }
 
 .footer a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
+}
+
+@keyframes changeOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

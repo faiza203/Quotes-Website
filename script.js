@@ -5,7 +5,8 @@ const quoteAuthor = document.querySelector(".quote-author");
 const newQuoteBtn = document.getElementById("new-quote");
 const icons = document.querySelector(".fa");
 const tweet = document.querySelector(".fa-twitter");
-const tamblur = document.querySelector(".fa-tumblr");
+const tweetPar = document.getElementById("tweet-quote");
+const tamblur = document.getElementById("tumblr-quote");
 
 let realData = "";
 let quoteData = "";
@@ -21,6 +22,10 @@ const getNewQuotes = () => {
   quote.innerHTML = `          <i class="fa fa-quote-left"> </i>${quoteData.text}`;
   author.innerText = quoteData.author ? "&" + quoteData.author : "UnKnown";
   changeColor();
+  quote.classList.add("changeOpacity")
+  setTimeout(() => {
+    quote.classList.remove("changeOpacity")
+  }, 5000);
 };
 
 const getQuotes = async () => {
@@ -46,7 +51,7 @@ const changeColor = () => {
   quoteAuthor.style.color = color;
   newQuoteBtn.style.backgroundColor = color;
   icons.style.color = color;
-  tweet.style.backgroundColor = color;
+  tweetPar.style.backgroundColor = color;
   tamblur.style.backgroundColor = color;
 };
 
