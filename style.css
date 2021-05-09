@@ -16,6 +16,7 @@ body {
   height: auto;
   width: 450px;
   padding: 40px 50px;
+  border-radius: 3px;
 }
 
 .quote-text {
@@ -35,7 +36,7 @@ body {
 }
 
 .buttons {
-  padding: 2em 0;
+  padding: 1em 0;
 }
 
 .buttons a {
@@ -47,7 +48,7 @@ body {
   align-items: center;
   text-decoration: none;
   border-radius: 5%;
-  margin: 0 5px;
+  margin: 0.5em 10px;
 }
 .buttons a i {
   font-size: 1.2em;
@@ -58,9 +59,10 @@ body {
   float: right;
   border: none;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 5%;
   font-weight: 600;
-  padding: 1em 1.5em;
+  height: 35px;
+  margin: 0.5em;
 }
 
 .changeOpacity {
@@ -85,5 +87,29 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  #quote-box,
+  .footer {
+    width: 70vw;
+  }
+}
+@media (max-width: 500px) {
+  #quote-box,
+  .footer {
+    padding: 20px;
+  }
+  .buttons{
+    padding: 1em 0 2em 0;
+  }
+  #text{
+    font-size: 20px;
+  }
+}@media (max-width: 350px) {
+  .buttons{
+    display: flex;
+    flex-wrap: wrap;
   }
 }
